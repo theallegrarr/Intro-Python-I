@@ -55,8 +55,5 @@ print(waypoints)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-i = 0
-while i < len(waypoints): 
-    for(k, v) in waypoints[i].items():
-        print(k, v)
-        i+=1
+for k in waypoints:
+    print(k['name'], k['lat'], k['lon'])
