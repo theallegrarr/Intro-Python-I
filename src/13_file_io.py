@@ -11,7 +11,6 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 with open('foo.txt', 'r') as f:
-  print(f)
   print(f.read())
   f.close()
 
@@ -23,11 +22,9 @@ with open('foo.txt', 'r') as f:
 # YOUR CODE HERE
 
 with open('bar.txt', 'w') as f:
-  print(f)
-  f.write('i live for this shit')
+  f.write('random content')
   f.close()
 
 with open('bar.txt', 'r') as f:
-  print(f)
   print(f.read())
   f.close()
