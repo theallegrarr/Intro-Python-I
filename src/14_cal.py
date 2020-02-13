@@ -31,10 +31,12 @@ import sys
 import calendar
 from datetime import datetime
 
+print(sys.argv[1], sys.argv[2])
+
 currentMonth = datetime.now().month
 currentYear = datetime.now().year
-y = input("Input the year : ")
-m = input("Input the month : ")
+y = sys.argv[2]
+m = sys.argv[1]
 
 if (y):
   currentYear = int(y)
